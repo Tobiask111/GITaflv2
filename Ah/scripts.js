@@ -35,6 +35,23 @@ function addRowToTable(album){
 
    albumObjects.forEach(addRowToTable) //tilføjer en række i tabellen for hvert album i "albumObjects"
     });
+    const sejKnap = document.getElementById("sejKnap");
+    const tableWithAlbums = document.getElementById("tableWithAlbums")
+
+  
+
+    tableWithAlbums.style.display = "block" 
+    sejKnap.textContent = "Hide"
+    sejKnap.addEventListener("click", () => {
+      if (tableWithAlbums.style.display === "none") {
+    tableWithAlbums.style.display = "block"
+    sejKnap.textContent = "Hide"
+  } else {
+    tableWithAlbums.style.display = "none"
+    sejKnap.textContent = "Show"
+  }
+})
+
   
   async function fetchContent(url) {
     let request = await fetch(url);

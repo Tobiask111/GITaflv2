@@ -17,3 +17,6 @@ html{
     color:rgb(5, 155, 155);
   }/* Styler table headeren og table data. Har igen brugt hsl da jeg gerne vil have en mørkere blå for table dataen og en lidt lysere blå for table header.  
   */
+  #sejKnap{
+    background: hsl(133, 98%, 16%)
+  }
