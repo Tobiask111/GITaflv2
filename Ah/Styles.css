@@ -1,3 +1,19 @@
 html{
-    background: hsl(90, 1%, 28%);
-}
+    background: hsl(0, 0%, 0%);
+} /* ændre baggrunden af html siden og jeg har brugt "hsl" i stedet for "color:(something)" da jeg sad og eksperimenterede med hvilken farve jeg vil have.
+*/
+  
+#tableWithAlbums {
+    width: 80%;
+  } /* Ændre bredden af tabellen med "id = tableWithAlbums"
+  */
+
+  th{
+    border: 1px solid #181717fa;
+    color:rgb(4, 209, 209);
+  }
+  td {
+    border: 1px solid #181717fa;
+    color:rgb(5, 155, 155);
+  }/* Styler table headeren og table data. Har igen brugt hsl da jeg gerne vil have en mørkere blå for table dataen og en lidt lysere blå for table header.  
+  */
