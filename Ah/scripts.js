@@ -36,12 +36,9 @@ function addRowToTable(album){
    albumObjects.forEach(addRowToTable) //tilføjer en række i tabellen for hvert album i "albumObjects"
     });
     const sejKnap = document.getElementById("sejKnap");
-    const tableWithAlbums = document.getElementById("tableWithAlbums")
-
-  
-
-    tableWithAlbums.style.display = "block" 
-    sejKnap.textContent = "Hide"
+    const tableWithAlbums = document.getElementById("tableWithAlbums")//Henter id fra html
+    tableWithAlbums.style.display = "block"//sætter tabellen til at være synlig 
+    sejKnap.textContent = "Hide"//for knappen til at sige hide
     sejKnap.addEventListener("click", () => {
       if (tableWithAlbums.style.display === "none") {
     tableWithAlbums.style.display = "block"
@@ -50,7 +47,7 @@ function addRowToTable(album){
     tableWithAlbums.style.display = "none"
     sejKnap.textContent = "Show"
   }
-})
+})//vi bruger "addEventListener" som lytter efter "click" og når knappen bliver trykket køre if/else, som i det her tilfælde tjekker om "display = block" eller "display = none" og ændre button teksten til hide/show. 
 
   
   async function fetchContent(url) {

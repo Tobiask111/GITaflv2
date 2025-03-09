@@ -18,5 +18,12 @@ html{
   }/* Styler table headeren og table data. Har igen brugt hsl da jeg gerne vil have en mørkere blå for table dataen og en lidt lysere blå for table header.  
   */
   #sejKnap{
-    background: hsl(133, 98%, 16%)
+    background: hsl(194, 90%, 45%)
   }
+  #sejKnap:hover{
+    background-color:hsl(194, 90%, 35%)
+  }
+  #sejKnap:active{
+    background-color: hsl(194, 90%, 60%)
+  } /*ændre baggrundsfarven og gør at når man trykker/hover så ændre farven på knappen.
+  */
