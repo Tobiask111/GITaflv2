@@ -8,7 +8,7 @@ function Album(artist, album, totalTracks, rating, favorites) {
   //Lige en side note tilføjet 5 stykker information i alt i stedet for 4 da jeg havde problemer da jeg sadte det 4 stykke information ind.
 
 function addRowToTable(album){
-  let tableBody=document.querySelector("#tableWithAlbums tbody")//finder den rigtige table body ved hjælp af #(id, som i dette tilfælde er tableWithAlbums).
+  let tableBody=document.querySelector("#tableWithAlbums tbody")//finder den rigtige table body ved hjælp af #"id"(som i dette tilfælde er tableWithAlbums).
   let række=document.createElement("tr"); //Opretter en ny tabel række(tr).
   række.innerHTML=`<td>${album.artist}</td>
   <td>${album.album}</td>
@@ -30,7 +30,7 @@ function addRowToTable(album){
         albums[i].favorites
       );
       albumObjects.push(album);
-    } // henter dataen fra "albums.json" og behandler det hvor det så går igennem loopet hvor "i" skal være mindre end længden af "albums". Derefter opretter vi albumobjekter der indeholder alt fra "albums[i].artistName" til " albums[i].favorites".
+    } // henter dataen fra "albums.json" og behandler det hvor efter det så går igennem loopet hvor "albums.length" skal være større end længden af "i=0". Derefter opretter vi albumobjekter der indeholder alt fra "albums[i].artistName" til " albums[i].favorites".
 
 
    albumObjects.forEach(addRowToTable) //tilføjer en række i tabellen for hvert album i "albumObjects"
@@ -54,4 +54,4 @@ function addRowToTable(album){
     let request = await fetch(url);
     let json = await request.json();
     return json;
-  }//Har ingen ide hvad det her egentlig gør, men det lød som om vi skulle bruge den udfra dit eksempel og koden virker ikke uden den. 
+  }//ok
