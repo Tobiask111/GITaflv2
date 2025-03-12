@@ -10,11 +10,11 @@ html{
 
   th{
     border: 1px solid #181717fa;
-    color:rgb(4, 209, 209);
+    color:hsl(191, 100%, 50%);
   }
   td {
     border: 1px solid #181717fa;
-    color:rgb(5, 155, 155);
+    color:hsl(191, 93%, 40%);
   }/* Styler table headeren og table data. Har igen brugt hsl da jeg gerne vil have en mørkere blå for table dataen og en lidt lysere blå for table header.  
   */
   #sejKnap{
