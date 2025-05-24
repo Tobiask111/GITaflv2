@@ -49,7 +49,7 @@ function addRowToTable(album){
   }
 })//vi bruger "addEventListener" som lytter efter "click" og når knappen bliver trykket køre if/else, som i det her tilfælde tjekker om "display = block" eller "display = none" og ændre button teksten til hide/show. 
 
-  
+
   async function fetchContent(url) {
     let request = await fetch(url);
     let json = await request.json();
